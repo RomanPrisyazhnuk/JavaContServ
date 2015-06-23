@@ -5,6 +5,7 @@
     </CLASSES>
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0-javadoc.jar!/" />
+      <root url="file://C:/Program Files/spring-framework-4.1.6.RELEASE-dist/spring-framework-4.1.6.RELEASE/docs/javadoc-api" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar!/" />

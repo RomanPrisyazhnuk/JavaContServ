@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="jcs1" class="Pack.JavaContactService"></bean>
+    <bean id="hobbyDao" class="Pack.HobbyDao"></bean>
+
+    <bean id="contactDao" class="Pack.ContactDao">
+    <property name="contactList">
+        <ref bean="someList"/></property>
+    </bean>
+
+    <bean id="messageDao" class="Pack.MessageDao"></bean>
+
+    <bean id="someList" class="java.util.ArrayList" scope="prototype" >
+        <constructor-arg>
+            <list></list>
+        </constructor-arg>
+    </bean>
+    <bean id="cont1" class="Pack.Contact">
+        <property name="firstName" value="Vasya"> </property>
+        <property name="lastName" value="Pupkin"> </property>
+        <property name="birthDate" value= "2000, 12, 12"> </property>
+        <property name="friendList">
+            <ref bean="someList"/></property>
+        <property name="hobbyList">
+            <ref bean="someList"/></property>
+   </bean>
+
+    <bean id="cont2" class="Pack.Contact">
+        <property name="firstName" value="Fedya"> </property>
+        <property name="lastName" value="Laptev"> </property>
+        <property name="birthDate" value= "1987, 10, 11"> </property>
+        <property name="friendList">
+            <ref bean="someList"/></property>
+        <property name="hobbyList">
+            <ref bean="someList"/></property>
+    </bean>
+
+    <bean id="cont3" class="Pack.Contact">
+        <property name="firstName" value="Semen"> </property>
+        <property name="lastName" value="Drogan"> </property>
+        <property name="birthDate" value= "2001, 9, 7"> </property>
+        <property name="friendList">
+            <ref bean="someList"/></property>
+        <property name="hobbyList">
+            <ref bean="someList"/></property>
+    </bean>
+
+    <bean id="hobby1" class="Pack.Hobby">
+        <property name="title" value="Sport"> </property>
+        <property name="description" value="Football fan"> </property>
+        <property name="contactsWithHobbyList">
+            <ref bean="someList"/></property>
+    </bean>
+    <bean id="hobby2" class="Pack.Hobby">
+        <property name="title" value="Art"> </property>
+        <property name="description" value="Drawing"> </property>
+        <property name="contactsWithHobbyList">
+            <ref bean="someList"/></property>
+    </bean>
+
+
+</beans>
