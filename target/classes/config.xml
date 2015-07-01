@@ -5,19 +5,16 @@
                            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
     <bean id="jcs1" class="Pack.JavaContactService"></bean>
-    <bean id="hobbyDao" class="Pack.HobbyDao"></bean>
+    <bean id="hobbyDao" class="Pack.HobbyDAO"></bean>
 
-    <bean id="contactDao" class="Pack.ContactDao">
+    <bean id="contactDao" class="Pack.ContactDAO">
     <property name="contactList">
         <ref bean="someList"/></property>
     </bean>
 
-    <bean id="messageDao" class="Pack.MessageDao"></bean>
+    <bean id="messageDao" class="Pack.MessageDAO"></bean>
 
     <bean id="someList" class="java.util.ArrayList" scope="prototype" >
-        <constructor-arg>
-            <list></list>
-        </constructor-arg>
     </bean>
     <bean id="cont1" class="Pack.Contact">
         <property name="firstName" value="Vasya"> </property>

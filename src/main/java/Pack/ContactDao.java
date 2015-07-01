@@ -2,15 +2,23 @@ package Pack;
 
 import java.util.ArrayList;
 
-public class ContactDao {
+public class ContactDAO {
     public ArrayList<Contact> contactList ;
 
     public void addContact(Contact contactToAdd){
         contactList.add(contactToAdd);
         System.out.println(" " + contactToAdd.getFirstName() + " added to contactList");
-
-
     }
+
+    public void addContact (ContactDTO contactDTO)
+    {
+        Contact contact = new Contact();
+        contact.setFirstName(contactDTO.getFirstName());
+        contact.setLastName(contactDTO.getLastName());
+        contact.setBirthDate(contactDTO.getBirthday());
+        contactList.add(contact);
+    }
+
     public void deleteContact(Contact  contactToRemove){
         System.out.println(contactToRemove.getFirstName()+" removed");
         contactList.remove(contactToRemove);

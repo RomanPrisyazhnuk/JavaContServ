@@ -13,10 +13,11 @@ import java.util.Set;
 public class Contact {
     String firstName=null;
     String lastName=null;
-    String  birthDate=null;
+    String  birthDay=null;
     public  ArrayList <Contact> friendList ;
     public  ArrayList <Hobby> hobbyList ;
     public  ArrayList <Message> MessageList ;
+    public  ArrayList <Place> PlaceList ;
 
 
 
@@ -29,7 +30,7 @@ public class Contact {
     }
 
     public String getBirthDate() {
-        return birthDate;
+        return birthDay;
     }
 
     public ArrayList<Contact> getFriendList() {
@@ -43,7 +44,7 @@ public class Contact {
     }
 
     public void setBirthDate(String birthDate) {
-        this.birthDate = birthDate;
+        this.birthDay = birthDate;
     }
 
     public void setFriendList(ArrayList<Contact> altFriendList) {

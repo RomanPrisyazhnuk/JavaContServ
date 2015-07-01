@@ -1,18 +1,29 @@
 package Pack;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 /**
  * Created by AversiveDread on 10.06.2015.
  */
 public class Message {
-    LocalDate time;
+    LocalDateTime date;
     Contact from;
     Contact to;
     String content;
+    public Message(LocalDateTime date, Contact from, Contact to, String content) {
+        this.date = date;
+        this.from = from;
+        this.to = to;
+        this.content = content;
+    }
 
-    public LocalDate getTime() {        return time;}
+    public LocalDateTime getDate() {
+        return date;
+    }
 
-    public void setTime(LocalDate time) {this.time = time;}
+    public void setDate(LocalDateTime date) {
+        this.date = date;
+    }
 
     public Contact getFrom() {
         return from;

@@ -1,10 +1,6 @@
 package Main;
 import Pack.*;
-import com.sun.xml.internal.bind.v2.runtime.reflect.Lister;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import java.time.LocalDate;
-import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,8 +11,8 @@ public class Main {
         Contact cont1 = (Contact) ac.getBean("cont1");
         Contact cont2 = (Contact) ac.getBean("cont2");
         Contact cont3 = (Contact) ac.getBean("cont3");
-        ContactDao contactDao =(ContactDao) ac.getBean("contactDao");
-        HobbyDao hobbyDao =(HobbyDao) ac.getBean("hobbyDao");
+        ContactDAO contactDao =(ContactDAO) ac.getBean("contactDao");
+        HobbyDAO hobbyDao =(HobbyDAO) ac.getBean("hobbyDao");
         jcs1.createContact(cont1,contactDao);
         jcs1.createContact(cont2,contactDao);
         jcs1.createContact(cont3,contactDao);
@@ -32,8 +28,7 @@ public class Main {
 //выводим необходимую информацию
         jcs1.getFriendList(cont1);
         jcs1.getFriendList(cont2);
-        contactDao.deleteContact(cont1);
-
+        jcs1.addPlace("Тут","Где есть кто-то",25.0,46.0);
 
 
 

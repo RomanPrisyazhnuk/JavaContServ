@@ -1,5 +1,5 @@
 package Pack;
-public class HobbyDao {
+public class HobbyDAO {
 
   //  public void addHobby(Contact cont,String titl,String descr){
   //      Hobby newHobby = new Hobby();
