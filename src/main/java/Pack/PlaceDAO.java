@@ -8,7 +8,7 @@ import java.util.ArrayList;
 @Component
 public class PlaceDAO {
 
-    private ArrayList<Place> placetList = new ArrayList<Place>();
+    private ArrayList<Place> placeList = new ArrayList<Place>();
 
     public void addPlace(PlaceDTO placeDTO) {
         Place place = new Place();
@@ -16,6 +16,7 @@ public class PlaceDAO {
         place.setDescription(placeDTO.getDescription());
         place.setLongtitude(placeDTO.getLongtitude());
         place.setLatitude(placeDTO.getLatitude());
-        placetList.add(place);
+        System.out.println();
+        placeList.add(place);
     }
 }

@@ -28,12 +28,9 @@ public class Main {
 //выводим необходимую информацию
         jcs1.getFriendList(cont1);
         jcs1.getFriendList(cont2);
-        jcs1.addPlace("Тут","Где есть кто-то",25.0,46.0);
+      // jcs1.addPlace("here","there",25,24);
 
-
-
-
-
+        //jcs1.createContact("Igor","Vatnik","10.10.89");
 
     }
 }

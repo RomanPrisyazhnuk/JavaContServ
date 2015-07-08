@@ -6,14 +6,12 @@ import org.springframework.stereotype.Component;
 @Component
     public class PlaceDTO {
 
-        private String title;
-        private double longtitude;
-        private double latitude;
-        private String description;
+        private String title= "No place";
+        private double longtitude=0;
+        private double latitude=0;
+        private String description="No description";
 
-        public String getTitle() {
-            return title;
-        }
+        public String getTitle() {return title;}
 
         public void setTitle(String title) {
             this.title = title;

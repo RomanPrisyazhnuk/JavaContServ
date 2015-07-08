@@ -1,10 +1,13 @@
 package Pack;
+import org.springframework.stereotype.Component;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 /**
  * Created by AversiveDread on 10.06.2015.
  */
+@Component
 public class Message {
     LocalDateTime date;
     Contact from;

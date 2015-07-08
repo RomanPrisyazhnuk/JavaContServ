@@ -1,5 +1,6 @@
 package Pack;
 import Main.Main;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -10,10 +11,11 @@ import java.util.Set;
 /**
  * Created by AversiveDread on 10.06.2015.
  */
+@Component
 public class Contact {
-    String firstName=null;
-    String lastName=null;
-    String  birthDay=null;
+    String firstName="No name";
+    String lastName="No lastName";
+    String  birthDay="No birthDay";
     public  ArrayList <Contact> friendList ;
     public  ArrayList <Hobby> hobbyList ;
     public  ArrayList <Message> MessageList ;

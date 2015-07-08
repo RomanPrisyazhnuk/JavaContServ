@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaContServ.iml" filepath="$PROJECT_DIR$/JavaContServ.iml" />
+      <module fileurl="file://C:/Program Files/Mockito/Mockito.iml" filepath="C:/Program Files/Mockito/Mockito.iml" />
       <module fileurl="file://C:/Program Files/spring-framework-4.1.6.RELEASE-dist/spring-framework-4.1.6.RELEASE/spring-framework-4.1.6.RELEASE.iml" filepath="C:/Program Files/spring-framework-4.1.6.RELEASE-dist/spring-framework-4.1.6.RELEASE/spring-framework-4.1.6.RELEASE.iml" />
     </modules>
   </component>

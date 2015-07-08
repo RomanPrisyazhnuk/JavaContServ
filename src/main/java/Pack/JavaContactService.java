@@ -2,7 +2,6 @@ package Pack;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 @Service
 public class JavaContactService {
     @Autowired
@@ -59,7 +58,9 @@ public class JavaContactService {
         placeDTO.setDescription(description);
         placeDTO.setLongtitude(longitude);
         placeDTO.setLatitude(latitude);
+
         placeDao.addPlace(placeDTO);
+
     }
 
     public void getConversation(Contact cont1, Contact cont2){

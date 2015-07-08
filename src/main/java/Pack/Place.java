@@ -1,10 +1,13 @@
 package Pack;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Place {
-    String title;
-    double longtitude;
-    double latitude;
-    String description;
+    String title="No place";
+    double longtitude=0;
+    double latitude=0;
+    String description="No description";
 
     public String getTitle() {
         return title;
